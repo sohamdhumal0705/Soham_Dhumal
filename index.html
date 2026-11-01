@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MindMetrics - Test your reasoning, pattern recognition, and logical thinking with our interactive 20-question cognitive assessment.">
+  <title>MindMetrics — IQ Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="brand-logo" id="brand-logo" role="button" tabindex="0" aria-label="MindMetrics Home">
+        <span class="logo-icon">🧠</span>
+        <span class="logo-text">Mind<strong>Metrics</strong></span>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+      </nav>
+      <button class="btn btn-outline" id="nav-action-btn">Take Challenge</button>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+
+    <!-- VIEW 1: LANDING / HOME PAGE -->
+    <section id="view-home" class="view-section active">
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <div class="hero-content">
+          <span class="pill-badge">Cognitive Skills Assessment</span>
+          <h1 class="hero-title">Discover Your Logical & Analytical Thinking Skills</h1>
+          <p class="hero-subtitle">
+            Challenge your mind with 20 carefully formulated questions spanning mathematical logic, 
+            pattern identification, verbal analogies, and spatial sequences.
+          </p>
+          <div class="hero-cta-group">
+            <button class="btn btn-primary btn-lg" id="start-test-btn">
+              <span>Start IQ Test</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <a href="#how-it-works" class="btn btn-ghost btn-lg">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Info Cards Grid -->
+        <div class="info-cards-grid">
+          <div class="info-card">
+            <div class="info-card-icon">⏱️</div>
+            <div class="info-card-details">
+              <h3>15 Minutes</h3>
+              <p>Strict countdown timer for focused problem solving</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">📝</div>
+            <div class="info-card-details">
+              <h3>20 Questions</h3>
+              <p>Diverse standard multiple-choice challenges</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">📊</div>
+            <div class="info-card-details">
+              <h3>6 Categories</h3>
+              <p>Logic, sequences, verbal, math, and patterns</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">⚡</div>
+            <div class="info-card-details">
+              <h3>Instant Results</h3>
+              <p>Itemized explanations and performance breakdowns</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Educational Disclaimer -->
+      <div class="disclaimer-banner">
+        <div class="disclaimer-icon">ℹ️</div>
+        <p>
+          <strong>Educational Disclaimer:</strong> MindMetrics is an entertaining mental exercise designed to measure logical and analytical reasoning. It is not an officially standardized clinical psychological IQ assessment (such as WAIS or Stanford-Binet).
+        </p>
+      </div>
+
+      <!-- About Section -->
+      <section class="content-section" id="about">
+        <div class="section-header">
+          <span class="pill-badge">About The Challenge</span>
+          <h2>Designed For Sharp Thinkers</h2>
+          <p>Every problem tests core reasoning abilities without requiring external calculators or advanced background knowledge.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-box">
+            <h4>Logical Deduction</h4>
+            <p>Evaluate formal premises and derive sound, unequivocal conclusions.</p>
+          </div>
+          <div class="feature-box">
+            <h4>Number Sequences</h4>
+            <p>Identify progression rules, quadratic steps, and multiplicative chains.</p>
+          </div>
+          <div class="feature-box">
+            <h4>Verbal Analogies</h4>
+            <p>Assess semantic patterns, conceptual relationships, and vocabulary contrast.</p>
+          </div>
+          <div class="feature-box">
+            <h4>Pattern Recognition</h4>
+            <p>Spot visual and abstract anomalies across structural groups.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="content-section light-bg" id="how-it-works">
+        <div class="section-header">
+          <span class="pill-badge">Process</span>
+          <h2>How The Test Works</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h3>Read Instructions</h3>
+            <p>Familiarize yourself with the scoring mechanism and interface layout.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h3>Solve Under Time</h3>
+            <p>Answer questions within 15 minutes. Navigate freely between items.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h3>Review Breakdown</h3>
+            <p>Analyze your category score percentages and complete step-by-step solutions.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- VIEW 2: INSTRUCTIONS SCREEN -->
+    <section id="view-instructions" class="view-section">
+      <div class="instruction-card">
+        <div class="instruction-header">
+          <span class="pill-badge">Preparation</span>
+          <h2>Test Guidelines & Rules</h2>
+          <p>Please read the following instructions carefully before starting your timer.</p>
+        </div>
+
+        <ul class="instruction-list">
+          <li>
+            <div class="list-bullet">✓</div>
+            <div><strong>20 Questions:</strong> Covering logic, math, patterns, sequences, and analytical thinking.</div>
+          </li>
+          <li>
+            <div class="list-bullet">✓</div>
+            <div><strong>15-Minute Countdown:</strong> An unpaused timer will start immediately once you click "Begin Test".</div>
+          </li>
+          <li>
+            <div class="list-bullet">✓</div>
+            <div><strong>Scoring Rules:</strong> +1 mark for each correct answer. There is no penalty (0 marks) for incorrect or unanswered questions.</div>
+          </li>
+          <li>
+            <div class="list-bullet">✓</div>
+            <div><strong>Flexible Navigation:</strong> You can skip questions, go back, change your selections, or use the navigation palette to jump directly to any item.</div>
+          </li>
+          <li>
+            <div class="list-bullet">✓</div>
+            <div><strong>Auto-Submission:</strong> The quiz automatically submits when the 15-minute timer reaches 00:00.</div>
+          </li>
+        </ul>
+
+        <div class="instruction-actions">
+          <button class="btn btn-secondary" id="instruction-back-btn">Cancel & Back</button>
+          <button class="btn btn-primary btn-lg" id="begin-test-btn">Begin Test Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: ACTIVE TEST VIEW -->
+    <section id="view-quiz" class="view-section">
+      <!-- Quiz Header / Bar -->
+      <div class="quiz-topbar">
+        <div class="quiz-topbar-left">
+          <span class="question-tracker" id="question-tracker">Question 1 of 20</span>
+          <span class="category-tag" id="category-tag">Logical Reasoning</span>
+        </div>
+        <div class="timer-badge" id="timer-badge" aria-live="polite">
+          <span class="timer-icon">⏳</span>
+          <span class="timer-text" id="timer-display">15:00</span>
+        </div>
+      </div>
+
+      <!-- Linear Progress Bar -->
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progress-bar-fill" style="width: 5%;"></div>
+      </div>
+
+      <!-- Quiz Main Layout (Question Card + Question Matrix) -->
+      <div class="quiz-layout">
+        <!-- Question Pane -->
+        <div class="quiz-card">
+          <div class="question-prompt" id="question-prompt">
+            Loading question...
+          </div>
+
+          <div class="options-container" id="options-container">
+            <!-- Rendered dynamically -->
+          </div>
+
+          <div class="quiz-footer-controls">
+            <button class="btn btn-secondary" id="prev-btn" disabled>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>Previous</span>
+            </button>
+            <div class="footer-center">
+              <button class="btn btn-danger-outline" id="clear-answer-btn">Clear Selection</button>
+            </div>
+            <div class="footer-right">
+              <button class="btn btn-secondary" id="next-btn">
+                <span>Next</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <button class="btn btn-success" id="finish-btn">Finish Test</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question Palette / Navigator Sidebar -->
+        <aside class="navigator-card">
+          <div class="navigator-header">
+            <h3>Question Palette</h3>
+            <span class="navigator-count" id="answered-counter">0/20 Answered</span>
+          </div>
+
+          <div class="palette-grid" id="palette-grid">
+            <!-- 20 grid items injected via JS -->
+          </div>
+
+          <div class="palette-legend">
+            <div class="legend-item"><span class="legend-swatch current"></span> Current</div>
+            <div class="legend-item"><span class="legend-swatch answered"></span> Answered</div>
+            <div class="legend-item"><span class="legend-swatch unanswered"></span> Unanswered</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VIEW 4: RESULTS DASHBOARD -->
+    <section id="view-results" class="view-section">
+      <div class="results-container">
+        <!-- Result Header -->
+        <div class="results-header">
+          <span class="pill-badge" id="results-badge">Assessment Complete</span>
+          <h2 id="feedback-heading">Outstanding Performance!</h2>
+          <p id="feedback-message">You demonstrated superior cognitive reasoning across diverse analytical challenges.</p>
+        </div>
+
+        <!-- Key Score Cards -->
+        <div class="score-summary-grid">
+          <!-- Circular Animated Score Chart -->
+          <div class="chart-card">
+            <div class="circular-chart-wrapper">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle" id="score-circle-path"
+                  stroke-dasharray="0, 100"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+              </svg>
+              <div class="circular-chart-value">
+                <span id="score-percentage-text">0%</span>
+                <span class="score-label">Score</span>
+              </div>
+            </div>
+            <p class="score-caption" id="score-fraction">0 of 20 Correct</p>
+          </div>
+
+          <!-- Numerical Metrics -->
+          <div class="metrics-grid">
+            <div class="metric-card metric-correct">
+              <div class="metric-icon">✓</div>
+              <div class="metric-info">
+                <span class="metric-num" id="metric-correct-num">0</span>
+                <span class="metric-label">Correct</span>
+              </div>
+            </div>
+            <div class="metric-card metric-incorrect">
+              <div class="metric-icon">✗</div>
+              <div class="metric-info">
+                <span class="metric-num" id="metric-incorrect-num">0</span>
+                <span class="metric-label">Incorrect</span>
+              </div>
+            </div>
+            <div class="metric-card metric-unanswered">
+              <div class="metric-icon">―</div>
+              <div class="metric-info">
+                <span class="metric-num" id="metric-unanswered-num">0</span>
+                <span class="metric-label">Unanswered</span>
+              </div>
+            </div>
+            <div class="metric-card metric-time">
+              <div class="metric-icon">⏱</div>
+              <div class="metric-info">
+                <span class="metric-num" id="metric-time-spent">0m 0s</span>
+                <span class="metric-label">Time Taken</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Performance Breakdown -->
+        <div class="category-breakdown-card">
+          <h3>Category Performance</h3>
+          <div class="category-bars-list" id="category-bars-list">
+            <!-- Dynamic Category Breakdown -->
+          </div>
+        </div>
+
+        <!-- Disclaimer Banner on Results -->
+        <div class="disclaimer-banner small-banner">
+          <p>
+            * <strong>Notice:</strong> This score represents performance solely on this educational reasoning quiz. It should not be used as an official diagnostic measurement of cognitive abilities.
+          </p>
+        </div>
+
+        <!-- Dashboard Action Buttons -->
+        <div class="results-actions">
+          <button class="btn btn-primary" id="review-answers-btn">Review Answers</button>
+          <button class="btn btn-secondary" id="retake-test-btn">Retake Test</button>
+          <button class="btn btn-ghost" id="return-home-btn">Back to Home</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 5: ANSWER REVIEW SCREEN -->
+    <section id="view-review" class="view-section">
+      <div class="review-container">
+        <div class="review-header">
+          <div>
+            <span class="pill-badge">Detailed Solutions</span>
+            <h2>Question By Question Analysis</h2>
+          </div>
+          <button class="btn btn-secondary" id="back-to-results-btn">Back to Results</button>
+        </div>
+
+        <div class="review-list" id="review-list">
+          <!-- Dynamically populated with all 20 questions + explanations -->
+        </div>
+
+        <div class="review-bottom-actions">
+          <button class="btn btn-primary" id="bottom-back-results-btn">Return to Score Summary</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONFIRMATION SUBMIT MODAL -->
+  <div class="modal-overlay" id="confirm-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-title">Ready to Submit?</h3>
+      </div>
+      <div class="modal-body">
+        <p id="modal-summary-text">You have answered 0 of 20 questions.</p>
+        <p class="modal-subtext">You will not be able to modify your answers once you finish.</p>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="modal-cancel-btn">Continue Test</button>
+        <button class="btn btn-success" id="modal-confirm-btn">Yes, Submit Now</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <p>© 2026 MindMetrics Challenge. An educational logic and reasoning assessment project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
